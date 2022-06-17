@@ -1,0 +1,110 @@
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #698ff7;
+  --color-text-main: #000000;
+  --color-primary: #ffff00b6;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HKGrotesk";
+  --font-family-header: "HKGrotesk";
+}
+
+@font-face {
+  font-family: HKGrotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HKGrotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: HKGrotesk;
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  color: #000000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 105%;
+  margin: 12px 0 12px 0;
+  border-bottom: 4px solid #fff;
+  text-align: center;
+}
+
+footer {
+  font-size: 14px;
+  justify-content: space-between;
+  margin: 12px 0 12px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+main div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 12px 0 0 0;
+}
+
+main div * {
+  margin: 0 6px 0 6px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+button {
+  font-family: HKGrotesk;
+  padding: 12px 12px;
+  font-size: 14px;
+  line-height: 1px;
+  height: 25px;
+  width: 1 00px;
+  align-items: center;
+  cursor: pointer;
+  background: #ffffff;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #a3a3a3;
+}
+
+button:active {
+  background-color: #638edd;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+div {
+  margin: 12px 0 12px 0;
+}

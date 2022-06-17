@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "me.glitch.prjpwa_unilasalle.twa",
+                     "sha256_cert_fingerprints": ["75:C8:6D:6D:70:71:CB:45:B3:5C:80:70:49:49:9A:77:97:61:97:6E:C5:1A:1F:85:D5:26:66:D6:86:D0:35:C1"] }
+      }
+]
